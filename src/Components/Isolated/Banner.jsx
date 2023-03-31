@@ -3,14 +3,14 @@ import img from "../../assets/img.jpg";
 
 function Banner() {
   return (
-    <div className="h-screen">
-      <div className="flex items-center justify-center w-2/3 mx-auto">
+    <div className="my-24">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:w-2/3 mx-auto">
         <img
           className="rounded-full w-[396px] border-[15px] border-[#444444] shadow-2xl"
           src={img}
           alt=""
         />
-        <div className="ml-10">
+        <div className="lg:ml-10">
           <p className="text-[#AAAAAA] my-5">Frontend Developer</p>
           <h1 className="font-bold text-6xl">Saleh Ahmed</h1>
           <p className="text-[#AAAAAA] my-5">
