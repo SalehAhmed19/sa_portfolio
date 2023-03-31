@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../../assets/img.jpg";
 
 function Banner() {
@@ -27,9 +28,11 @@ function Banner() {
               Download CV
             </a>
           </button>
-          <button className="border-2 border-[#D5D5D5] rounded-full py-2 px-6 ml-2">
-            Contact
-          </button>
+          <Link to="/contact">
+            <button className="border-2 border-[#D5D5D5] rounded-full py-2 px-6 ml-2">
+              Contact
+            </button>
+          </Link>
         </div>
       </div>
     </div>
