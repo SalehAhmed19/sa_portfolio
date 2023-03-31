@@ -51,54 +51,41 @@ function Navbar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <div className="flex justify-center items-center w-full">
-        <AppBar
-          component="nav"
-          sx={{
-            borderRadius: "40px",
-            margin: "30px auto",
-            width: "90%",
-            right: "0",
-            left: "0",
-            padding: "5px",
-            background: "#585D65",
-          }}
-        >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Box
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-            >
-              <div className="flex items-center">
-                <img className="h-10 block" src={logo} alt="" />
-                <h4
-                  className="font-bold text-xl ml-5"
-                  style={{ fontFamily: "Righteous", lineHeight: "1.2rem" }}
-                >
-                  Saleh <br /> Ahmed
-                </h4>
-              </div>
-            </Box>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
-              ))}
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </div>
+      <AppBar
+        component="nav"
+        sx={{ padding: "20px", boxShadow: "none", background: "#222222" }}
+      >
+        <Toolbar>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Box
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          >
+            <div className="flex items-center">
+              <img className="h-10" src={logo} alt="" />
+              <h4 className="text-xl">
+                <span className="font-bold ml-5">Saleh</span> Ahmed
+              </h4>
+            </div>
+          </Box>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: "#fff" }}>
+                {item}
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </AppBar>
       <Box component="nav">
         <Drawer
           container={container}
