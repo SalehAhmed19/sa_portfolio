@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 
 function Banner() {
   return (
-    <div className="my-24">
+    <div className="my-16">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:w-3/4 mx-auto">
         <Fade up>
           <img

@@ -13,7 +13,7 @@ import Blogs from "./Pages/Blogs";
 
 function App() {
   return (
-    <div className="App pt-32">
+    <div className="App pt-28">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

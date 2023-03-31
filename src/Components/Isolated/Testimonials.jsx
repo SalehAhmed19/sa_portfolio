@@ -36,7 +36,7 @@ function Testimonials() {
     loop: true,
     breakpoints: {
       "(min-width: 400px)": {
-        slides: { perView: 2, spacing: 5 },
+        slides: { perView: 1, spacing: 5 },
       },
       "(min-width: 1000px)": {
         slides: { perView: 2, spacing: 10 },
@@ -55,26 +55,28 @@ function Testimonials() {
         <div ref={sliderRef} className="keen-slider">
           {data.map((d) => (
             <Zoom>
-              <div key={d._id} className="keen-slider__slide pt-7 pl-20">
-                <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
-                  <img
-                    className="w-20 rounded-full mt-[-50px] ml-[-70px] z-40"
-                    src={d.img}
-                    alt=""
-                  />
-                  <div className="p-5">
-                    <h4 className="text-sm italic text-[#D5D5D5]">
-                      {d.review}
-                    </h4>
-                    <div className="flex mt-3">
-                      <FaQuoteLeft className="text-[#454545]" />
-                      <div className="ml-5">
-                        <p className="font-bold text-sm text-[#E5E5E5]">
-                          {d.author}
-                        </p>
-                        <p className="text-xs text-[#969696]">
-                          Date: 31 March 2023
-                        </p>
+              <div>
+                <div key={d._id} className="keen-slider__slide pt-7 pl-20">
+                  <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
+                    <img
+                      className="w-20 rounded-full mt-[-20px] lg:mt-[-50px] ml-[-70px] z-40"
+                      src={d.img}
+                      alt=""
+                    />
+                    <div className="p-5">
+                      <h4 className="text-sm italic text-[#D5D5D5]">
+                        {d.review}
+                      </h4>
+                      <div className="flex mt-3">
+                        <FaQuoteLeft className="text-[#454545]" />
+                        <div className="ml-5">
+                          <p className="font-bold text-sm text-[#E5E5E5]">
+                            {d.author}
+                          </p>
+                          <p className="text-xs text-[#969696]">
+                            Date: 31 March 2023
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

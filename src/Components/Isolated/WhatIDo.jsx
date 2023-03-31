@@ -32,7 +32,7 @@ function WhatIDo() {
     },
   ];
   return (
-    <div className="mb-10">
+    <div className="my-20">
       <h3 className="font-bold text-2xl">What I Do</h3>
       <div className="flex w-[140px]">
         <div className="h-[2px] bg-[#007CED] w-[20%] rounded-l-xl"></div>
