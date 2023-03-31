@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./Components/Shared/Navbar";
+import Footer from "./Components/Shared/Footer";
 import Home from "./Pages/Home";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App pt-32">
       <Navbar />
       <Home />
+      <Footer />
     </div>
   );
 }
