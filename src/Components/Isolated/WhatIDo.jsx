@@ -2,31 +2,32 @@ import React from "react";
 import { MdDesignServices, MdDeveloperMode } from "react-icons/md";
 import { AiOutlineApartment } from "react-icons/ai";
 import { SiWebstorm } from "react-icons/si";
+import { Fade } from "react-reveal";
 
 function WhatIDo() {
   const data = [
     {
       _id: 1,
       title: "Web Design",
-      des: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.",
+      des: "Web design is the process of creating visually appealing and user-friendly interfaces for websites. It involves a combination of graphic design, user experience design, and web development. A successful web design should engage users, provide a seamless experience, and effectively communicate the website's purpose and message.",
       icon: <MdDeveloperMode />,
     },
     {
       _id: 2,
       title: "Web Development",
-      des: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.",
+      des: "Web development involves the creation of websites and web applications using programming languages and web technologies such as HTML, CSS, and JavaScript. It encompasses both front-end development (client-side) and back-end development (server-side) and involves database management, server configuration, and application deployment. A successful web development project requires a combination of technical expertise, creativity, and problem-solving skills.",
       icon: <SiWebstorm />,
     },
     {
       _id: 3,
       title: "Figma",
-      des: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.",
+      des: "Figma is a cloud-based design tool used for creating user interfaces, prototypes, and design systems. It allows designers and teams to collaborate in real-time and provides a range of features for creating and sharing design assets. Figma has gained popularity among designers for its ease of use, versatility, and collaborative capabilities.",
       icon: <AiOutlineApartment />,
     },
     {
       _id: 4,
       title: "Illustration",
-      des: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.",
+      des: "Illustration is the art of creating visual representations of ideas, concepts, and stories through drawing, painting, or digital media. It is used in a variety of fields, including advertising, publishing, and entertainment. A successful illustration should effectively communicate a message or emotion and capture the viewer's attention.",
       icon: <MdDesignServices />,
     },
   ];
@@ -39,15 +40,17 @@ function WhatIDo() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-10">
         {data.map((d) => (
-          <div key={d._id} className="flex">
-            <div>
-              <h3 className="text-[#007CED] text-3xl">{d.icon}</h3>
+          <Fade down>
+            <div key={d._id} className="flex">
+              <div>
+                <h3 className="text-[#007CED] text-3xl">{d.icon}</h3>
+              </div>
+              <div className="ml-5">
+                <h3 className="font-bold">{d.title}</h3>
+                <p className="text-sm">{d.des}</p>
+              </div>
             </div>
-            <div className="ml-5">
-              <h3>{d.title}</h3>
-              <p>{d.des}</p>
-            </div>
-          </div>
+          </Fade>
         ))}
       </div>
     </div>

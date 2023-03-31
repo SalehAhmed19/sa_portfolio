@@ -12,29 +12,32 @@ import project5 from "../../assets/portfolio/project5.png";
 import project6 from "../../assets/portfolio/project6.png";
 import project7 from "../../assets/portfolio/project7.png";
 import project8 from "../../assets/portfolio/project8.png";
+import { Zoom } from "react-reveal";
 
 export default function ImgList() {
   return (
     <div className="lg:mx-20 mx-5 my-20">
       <ImageList variant="masonry" cols={4} gap={10}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <a href={item.href} target="_blank">
-              <img src={item.img} alt={item.title} loading="lazy" />
-            </a>
-            <ImageListItemBar
-              title={item.title}
-              subtitle={item.author}
-              actionIcon={
-                <IconButton
-                  sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-                  aria-label={`info about ${item.title}`}
-                >
-                  <InfoIcon />
-                </IconButton>
-              }
-            />
-          </ImageListItem>
+          <Zoom>
+            <ImageListItem key={item.img}>
+              <a href={item.href} target="_blank">
+                <img src={item.img} alt={item.title} loading="lazy" />
+              </a>
+              <ImageListItemBar
+                title={item.title}
+                subtitle={item.author}
+                actionIcon={
+                  <IconButton
+                    sx={{ color: "rgba(255, 255, 255, 0.54)" }}
+                    aria-label={`info about ${item.title}`}
+                  >
+                    <InfoIcon />
+                  </IconButton>
+                }
+              />
+            </ImageListItem>
+          </Zoom>
         ))}
       </ImageList>
     </div>

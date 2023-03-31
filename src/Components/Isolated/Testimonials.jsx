@@ -6,6 +6,7 @@ import img1 from "../../assets/testimonial-1.jpg";
 import img2 from "../../assets/testimonial-2.jpg";
 import img3 from "../../assets/testimonial-3.jpg";
 import { FaQuoteLeft } from "react-icons/fa";
+import { Zoom } from "react-reveal";
 
 function Testimonials() {
   const data = [
@@ -53,29 +54,33 @@ function Testimonials() {
       <div className="my-10">
         <div ref={sliderRef} className="keen-slider">
           {data.map((d) => (
-            <div key={d._id} className="keen-slider__slide pt-7 pl-20">
-              <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
-                <img
-                  className="w-20 rounded-full mt-[-50px] ml-[-70px] z-40"
-                  src={d.img}
-                  alt=""
-                />
-                <div className="p-5">
-                  <h4 className="text-sm italic text-[#D5D5D5]">{d.review}</h4>
-                  <div className="flex mt-3">
-                    <FaQuoteLeft className="text-[#454545]" />
-                    <div className="ml-5">
-                      <p className="font-bold text-sm text-[#E5E5E5]">
-                        {d.author}
-                      </p>
-                      <p className="text-xs text-[#969696]">
-                        Date: 31 March 2023
-                      </p>
+            <Zoom>
+              <div key={d._id} className="keen-slider__slide pt-7 pl-20">
+                <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
+                  <img
+                    className="w-20 rounded-full mt-[-50px] ml-[-70px] z-40"
+                    src={d.img}
+                    alt=""
+                  />
+                  <div className="p-5">
+                    <h4 className="text-sm italic text-[#D5D5D5]">
+                      {d.review}
+                    </h4>
+                    <div className="flex mt-3">
+                      <FaQuoteLeft className="text-[#454545]" />
+                      <div className="ml-5">
+                        <p className="font-bold text-sm text-[#E5E5E5]">
+                          {d.author}
+                        </p>
+                        <p className="text-xs text-[#969696]">
+                          Date: 31 March 2023
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Zoom>
           ))}
         </div>
       </div>

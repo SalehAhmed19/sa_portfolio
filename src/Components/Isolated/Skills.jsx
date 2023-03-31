@@ -1,5 +1,6 @@
 import { LinearProgress, Tooltip } from "@mui/joy";
 import React from "react";
+import { Zoom } from "react-reveal";
 
 const Skills = () => {
   const skills = [
@@ -21,16 +22,18 @@ const Skills = () => {
       </div>
       <div className="my-10 grid grid-cols-1 lg:grid-cols-4 gap-5">
         {skills.map((skill) => (
-          <Tooltip title={skill.strength + "%"} placement="top">
-            <div key={skill._id} className="cursor-pointer">
-              <h4>{skill.name}</h4>
-              <LinearProgress
-                variant="soft"
-                determinate
-                value={skill.strength}
-              />
-            </div>
-          </Tooltip>
+          <Zoom>
+            <Tooltip title={skill.strength + "%"} placement="top">
+              <div key={skill._id} className="cursor-pointer">
+                <h4>{skill.name}</h4>
+                <LinearProgress
+                  variant="soft"
+                  determinate
+                  value={skill.strength}
+                />
+              </div>
+            </Tooltip>
+          </Zoom>
         ))}
       </div>
     </div>
