@@ -19,8 +19,16 @@ function Banner() {
             felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
             a placerat sapien pretium eu.
           </p>
-          <button className="border-2 border-[#007CED] rounded-full py-2 px-6">
-            Download CV
+          <button
+            download
+            className="border-2 border-[#007CED] rounded-full py-2 px-6"
+          >
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1irBJ59Mw7VAXhF4H-qyQybuK2TL8F54V/view?usp=sharing"
+            >
+              Download CV
+            </a>
           </button>
           <button className="border-2 border-[#D5D5D5] rounded-full py-2 px-6 ml-2">
             Contact
