@@ -3,7 +3,7 @@ import img from "../../assets/img.jpg";
 
 function Banner() {
   return (
-    <div className="">
+    <div className="h-screen">
       <div className="flex items-center justify-center w-2/3 mx-auto">
         <img
           className="rounded-full w-[396px] border-[15px] border-[#444444] shadow-2xl"
