@@ -1,14 +1,14 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import "react-calendar-heatmap/dist/styles.css";
 import "../../Styles/Heatmap.css";
 import { Tooltip } from "react-tooltip";
 
 function Graph() {
+  const tooltipRef = useRef();
   return (
     <div className="my-20">
-      <Tooltip />
       <h3 className="font-bold text-2xl">GitHub Heatmap</h3>
       <div className="flex w-[225px]">
         <div className="h-[2px] bg-[#007CED] w-[20%] rounded-l-xl"></div>
@@ -22,12 +22,13 @@ function Graph() {
           endDate={new Date()}
           tooltip={(data) => `${data.date} - ${data.count} contributions`}
           onMouseOver={(data, e) => {
-            Tooltip.show(e.target, e);
+            tooltipRef.current.show(e.target, e);
           }}
           onMouseOut={() => {
-            Tooltip.hide();
+            tooltipRef.current.hide();
           }}
         />
+        <Tooltip ref={tooltipRef} className="tooltip" />
       </div>
     </div>
   );
