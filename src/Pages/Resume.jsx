@@ -1,6 +1,7 @@
 import React from "react";
 import Certificates from "../Components/Isolated/Certificates";
 import Education from "../Components/Isolated/Education";
+import Skills from "../Components/Isolated/Skills";
 
 function Resume() {
   return (
@@ -16,6 +17,7 @@ function Resume() {
         </div>
         <Education />
         <Certificates />
+        <Skills />
       </div>
     </div>
   );
