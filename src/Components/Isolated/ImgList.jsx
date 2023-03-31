@@ -16,16 +16,11 @@ import project8 from "../../assets/portfolio/project8.png";
 export default function ImgList() {
   return (
     <div className="lg:mx-20 mx-5 my-20">
-      <ImageList variant="masonry" cols={3} gap={10}>
+      <ImageList variant="masonry" cols={5} gap={10}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <a href={item.href} target="_blank">
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
+              <img src={item.img} alt={item.title} loading="lazy" />
             </a>
             <ImageListItemBar
               title={item.title}
