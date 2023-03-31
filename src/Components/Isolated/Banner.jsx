@@ -20,7 +20,7 @@ function Banner() {
             <div className="mb-4 text-[#1761B1]">
               <Typewriter
                 options={{
-                  strings: ["Frontend Developer", "Programmer"],
+                  strings: ["Frontend Developer", "React.Js Developer"],
                   autoStart: true,
                   loop: true,
                 }}

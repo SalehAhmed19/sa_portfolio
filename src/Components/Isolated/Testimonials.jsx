@@ -52,9 +52,9 @@ function Testimonials() {
         <div className="h-[2px] bg-[#353535] w-[80%] rounded-r-xl"></div>
       </div>
       <div className="my-10">
-        <div ref={sliderRef} className="keen-slider">
-          {data.map((d) => (
-            <Zoom>
+        <Zoom>
+          <div ref={sliderRef} className="keen-slider">
+            {data.map((d) => (
               <div>
                 <div key={d._id} className="keen-slider__slide pt-7 pl-20">
                   <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
@@ -82,9 +82,9 @@ function Testimonials() {
                   </div>
                 </div>
               </div>
-            </Zoom>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Zoom>
       </div>
     </div>
   );
