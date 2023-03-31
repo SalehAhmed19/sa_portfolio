@@ -15,9 +15,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["About Me", "Resume", "Portfolio", "Contact", "Blogs"];
+const navItems = [
+  { _id: 1, menu: "About Me", route: "/" },
+  { _id: 2, menu: "Resume", route: "/resume" },
+  { _id: 3, menu: "Portfolio", route: "/portfolio" },
+  { _id: 4, menu: "Contact", route: "/contact" },
+  { _id: 5, menu: "Blogs", route: "/blogs" },
+];
 
 function Navbar(props) {
   const { window } = props;
@@ -35,9 +42,9 @@ function Navbar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item._id} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.menu} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -79,9 +86,15 @@ function Navbar(props) {
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+              <Link to={item.route}>
+                <button
+                  className="mx-5 text-sm text-[#AAAAAA]"
+                  key={item._id}
+                  sx={{ color: "#fff" }}
+                >
+                  {item.menu}
+                </button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

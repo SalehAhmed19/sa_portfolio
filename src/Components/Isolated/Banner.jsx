@@ -19,10 +19,7 @@ function Banner() {
             felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna,
             a placerat sapien pretium eu.
           </p>
-          <button
-            download
-            className="border-2 border-[#007CED] rounded-full py-2 px-6"
-          >
+          <button className="border-2 border-[#007CED] rounded-full py-2 px-6">
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1irBJ59Mw7VAXhF4H-qyQybuK2TL8F54V/view?usp=sharing"

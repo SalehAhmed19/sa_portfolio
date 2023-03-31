@@ -7,6 +7,9 @@ import Footer from "./Components/Shared/Footer";
 import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Resume from "./Pages/Resume";
+import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
+import Blogs from "./Pages/Blogs";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Blogs />} />
       </Routes>
       <Footer />
     </div>

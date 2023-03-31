@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#282828] p-5 border-t-2 border-[#444444] flex justify-between">
+    <div className="bg-[#282828] p-5 border-t-2 border-[#444444] flex flex-col lg:flex-row lg:justify-between">
       <div className="flex text-sm text-[#8E8E8E]">
         <a href="https://www.linkedin.com/in/salehahmedmahin/" className="mx-5">
           Linked In
