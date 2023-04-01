@@ -59,10 +59,10 @@ function Testimonials() {
           <div ref={sliderRef} className="keen-slider">
             {data.map((d) => (
               <div>
-                <div key={d._id} className="keen-slider__slide pt-7 pl-20">
+                <div key={d._id} className="keen-slider__slide pt-7 lg:pl-20">
                   <div className="border-2 border-[#444444] bg-[#282828] lg:p-5 rounded-md">
                     <img
-                      className="w-20 rounded-full mt-[-20px] lg:mt-[-50px] ml-[-70px] z-40"
+                      className="w-20 rounded-full mt-[-20px] lg:mt-[-50px] lg:ml-[-70px] z-40"
                       src={d.img}
                       alt=""
                     />

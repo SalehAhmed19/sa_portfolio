@@ -45,7 +45,7 @@ function Banner() {
               target="_blank"
               href="https://drive.google.com/file/d/1irBJ59Mw7VAXhF4H-qyQybuK2TL8F54V/view?usp=sharing"
             >
-              <button className="border-2 gradient-bg shadow-xl duration-200 rounded-full py-2 px-6">
+              <button className="border-2 border-[#007CED] hover:bg-[#007CED] shadow-xl duration-200 rounded-full py-2 px-6">
                 Download CV
               </button>
             </a>
