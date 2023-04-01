@@ -30,7 +30,7 @@ function Testimonials() {
       _id: 3,
       author: "Salman Farsi",
       review:
-        "The web development service provided by Saleh Ahemd exceeded my expectations. He was professional, responsive, and delivered a stunning website that has helped grow my business. I would highly recommend his services to anyone in need of top-quality web development.",
+        "My expectations were surpassed by Saleh Ahemd's web building service. He created a great website that has aided in the expansion of my firm and was competent and responsive. I would strongly advise using his services if you require high-caliber web development.",
       img: img3,
       date: "05 August 2022",
     },

@@ -20,7 +20,11 @@ function Banner() {
             <div className="mb-4 text-[#1761B1]">
               <Typewriter
                 options={{
-                  strings: ["Frontend Developer", "React.Js Developer"],
+                  strings: [
+                    "Frontend Developer",
+                    "React.Js Developer",
+                    "MERN Stack Developer",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
@@ -28,17 +32,14 @@ function Banner() {
             </div>
             <h1 className="font-bold text-6xl">Saleh Ahmed</h1>
             <p className="text-[#AAAAAA] my-5">
-              As a frontend developer with expertise in the MERN stack, my
-              portfolio showcases my ability to create dynamic and responsive
-              web applications using modern web development technologies. With a
-              strong focus on user experience, I have demonstrated my
-              proficiency in implementing intuitive and visually appealing
-              interfaces that enhance the overall user engagement. My projects
-              demonstrate my ability to work with a wide range of tools and
-              frameworks, including React, Redux, Node.js, Express.js, and
-              MongoDB, among others. Through my portfolio, I aim to demonstrate
-              my ability to develop high-quality web applications that meet the
-              requirements of clients and users alike.
+              As a web developer specializing in MERN Stack, I possess a keen
+              eye for detail and a passion for creating visually stunning and
+              highly functional user interfaces. With my strong proficiency in
+              HTML, CSS, JavaScript, React, and Node.js, I am committed to
+              delivering innovative solutions that exceed client expectations. I
+              am always up-to-date with the latest trends and technologies in
+              the industry to ensure that my work is always at the forefront of
+              innovation.
             </p>
             <button className="border-2 border-[#007CED] rounded-full py-2 px-6">
               <a
