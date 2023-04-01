@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import "react-calendar-heatmap/dist/styles.css";
 import "../../Styles/Heatmap.css";
-import { Tooltip } from "react-tooltip";
 import { Fade } from "react-reveal";
 
 function Graph() {
@@ -24,15 +23,7 @@ function Graph() {
             username="SalehAhmed19"
             startDate="2021-12-31"
             endDate={new Date()}
-            tooltip={(data) => `${data.date} - ${data.count} contributions`}
-            onMouseOver={(data, e) => {
-              tooltipRef.current.show(e.target, e);
-            }}
-            onMouseOut={() => {
-              tooltipRef.current.hide();
-            }}
           />
-          <Tooltip ref={tooltipRef} className="tooltip" />
         </div>
       </Fade>
     </div>
