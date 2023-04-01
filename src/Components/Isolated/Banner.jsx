@@ -17,7 +17,7 @@ function Banner() {
         </Fade>
         <Fade up>
           <div className="lg:ml-10">
-            <div className="mb-4 text-[#1761B1]">
+            <div className="mb-4 text-[#007CED]">
               <Typewriter
                 options={{
                   strings: [

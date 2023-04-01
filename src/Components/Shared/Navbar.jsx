@@ -79,8 +79,8 @@ function Navbar(props) {
           >
             <div className="flex items-center">
               <img className="h-10" src={logo} alt="" />
-              <h4 className="text-xl">
-                <span className="font-bold ml-5">Saleh</span> Ahmed
+              <h4 className="font-bold text-xl mx-5">
+                {"<"}SALEH AHMED{"/>"}
               </h4>
             </div>
           </Box>
