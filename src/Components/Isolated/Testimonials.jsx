@@ -3,8 +3,8 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../../Styles/Testimonials.module.css";
 import img1 from "../../assets/testimonial-1.jpg";
-import img2 from "../../assets/testimonial-2.jpg";
-import img3 from "../../assets/testimonial-3.jpg";
+import img2 from "../../assets/testimonial-2.jpeg";
+import img3 from "../../assets/testimonial-3.jpeg";
 import { FaQuoteLeft } from "react-icons/fa";
 import { Zoom } from "react-reveal";
 
@@ -12,24 +12,27 @@ function Testimonials() {
   const data = [
     {
       _id: 1,
-      author: "Gary Johnson",
+      author: "Adv Shamiul Islam",
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus magnam voluptas pariatur ipsa eum ab!",
+        "I recently hired Saleh Ahmed for web development services and he exceeded my expectations. He was professional, efficient, and attentive to my needs. The end result was a beautiful and functional website that has helped me a lot.",
       img: img1,
+      date: "05 December 2022",
     },
     {
       _id: 2,
-      author: "Daniel Pringle",
+      author: "Sabbir Ahmed",
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus magnam voluptas pariatur ipsa eum ab!",
+        "I am extremely pleased with the web development services provided by Saleh Ahmed. He was professional, responsive, and delivered a stunning website that met all my business needs. I would highly recommend him to anyone looking for top-quality web development services.",
       img: img2,
+      date: "15 January 2023",
     },
     {
       _id: 3,
-      author: "Billy Adam",
+      author: "Salman Farsi",
       review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus magnam voluptas pariatur ipsa eum ab!",
+        "The web development service provided by Saleh Ahemd exceeded my expectations. He was professional, responsive, and delivered a stunning website that has helped grow my business. I would highly recommend his services to anyone in need of top-quality web development.",
       img: img3,
+      date: "05 August 2022",
     },
   ];
   const [sliderRef] = useKeenSlider({
@@ -46,8 +49,8 @@ function Testimonials() {
   });
   return (
     <div>
-      <h3 className="font-bold text-2xl">Testimonials</h3>
-      <div className="flex w-[180px]">
+      <h3 className="font-bold text-2xl">Client Reviews</h3>
+      <div className="flex w-[260px]">
         <div className="h-[2px] bg-[#007CED] w-[20%] rounded-l-xl"></div>
         <div className="h-[2px] bg-[#353535] w-[80%] rounded-r-xl"></div>
       </div>
@@ -74,7 +77,7 @@ function Testimonials() {
                             {d.author}
                           </p>
                           <p className="text-xs text-[#969696]">
-                            Date: 31 March 2023
+                            Date: {d.date}
                           </p>
                         </div>
                       </div>
