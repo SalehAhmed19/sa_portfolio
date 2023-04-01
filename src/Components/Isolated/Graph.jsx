@@ -18,6 +18,8 @@ function Graph() {
       <Fade up>
         <div className="my-10">
           <GitHubCalendar
+            hideTotalCount
+            showWeekdayLabels={true}
             style={{ margin: "0 auto" }}
             username="SalehAhmed19"
             startDate="2021-12-31"
