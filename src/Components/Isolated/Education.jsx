@@ -4,7 +4,7 @@ import { Zoom } from "react-reveal";
 const Education = () => {
   return (
     <Zoom>
-      <div>
+      <div className="mb-20">
         <h3 className="font-bold text-2xl">Education</h3>
         <div className="flex w-[150px] mb-5">
           <div className="h-[2px] bg-[#007CED] w-[20%] rounded-l-xl"></div>

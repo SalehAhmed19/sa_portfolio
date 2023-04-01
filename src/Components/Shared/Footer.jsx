@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#282828] p-5 border-t-2 border-[#444444] flex flex-col lg:flex-row lg:justify-between">
-      <div className="flex text-sm text-[#8E8E8E]">
+    <div className="gradient-bg py-20 lg:px-20 px-5 border-t-2 border-[#444444] flex flex-col lg:flex-row lg:justify-between">
+      <div className="flex text-sm text-[#fff]">
         <a href="https://www.linkedin.com/in/salehahmedmahin/" className="mx-5">
           Linked In
         </a>
@@ -15,7 +15,7 @@ function Footer() {
         </a>
       </div>
       <div>
-        <p className="text-[#8E8E8E]">&copy; 2023 All Rights Reserved</p>
+        <p className="text-[#fff]">&copy; 2023 All Rights Reserved</p>
       </div>
     </div>
   );

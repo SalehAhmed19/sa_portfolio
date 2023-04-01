@@ -14,7 +14,7 @@ const Certificates = () => {
   ];
   const [layout, setLayout] = React.useState(undefined);
   return (
-    <div className="my-10">
+    <div className="my-20">
       <h3 className="font-bold text-2xl">Certificates</h3>
       <div className="flex w-[170px] mb-5">
         <div className="h-[2px] bg-[#007CED] w-[20%] rounded-l-xl"></div>

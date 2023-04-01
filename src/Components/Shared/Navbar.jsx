@@ -35,8 +35,21 @@ function Navbar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}></Typography>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{
+        textAlign: "center",
+        color: "#fff",
+        background: "#222222",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <Box variant="h6" sx={{ my: 2 }}>
+        <img className="h-10" src={logo} alt="" />
+      </Box>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -79,9 +92,6 @@ function Navbar(props) {
           >
             <div className="flex items-center">
               <img className="h-10" src={logo} alt="" />
-              <h4 className="font-bold text-xl mx-5">
-                {"<"}SALEH AHMED{"/>"}
-              </h4>
             </div>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
