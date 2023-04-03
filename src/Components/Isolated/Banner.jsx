@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "../../assets/img.jpg";
+import img from "../../assets/SALOGO.png";
 import Typewriter from "typewriter-effect";
-import { Fade } from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 function Banner() {
   return (
     <div className="my-16">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:w-3/4 mx-auto">
-        <Fade up>
+        <Zoom>
           <img
             className="rounded-full w-[396px] border-[15px] border-[#444444] shadow-2xl"
             src={img}
             alt=""
           />
-        </Fade>
+        </Zoom>
         <Fade up>
           <div className="lg:ml-10">
             <div className="mb-4 text-[#007CED]">
