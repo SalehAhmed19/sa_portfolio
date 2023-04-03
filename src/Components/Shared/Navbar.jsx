@@ -12,8 +12,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -48,7 +46,7 @@ function Navbar(props) {
       }}
     >
       <Box variant="h6" sx={{ my: 2 }}>
-        <img className="h-10" src={logo} alt="" />
+        <img className="h-14" src={logo} alt="" />
       </Box>
       <Divider />
       <List>
@@ -91,7 +89,7 @@ function Navbar(props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             <div className="flex items-center">
-              <img className="h-10" src={logo} alt="" />
+              <img className="h-14" src={logo} alt="" />
             </div>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
