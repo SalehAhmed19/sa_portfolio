@@ -9,11 +9,7 @@ function Banner() {
     <div className="my-16">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:w-3/4 mx-auto">
         <Zoom>
-          <img
-            className="rounded-full w-[396px] border-[15px] border-[#444444] shadow-2xl"
-            src={img}
-            alt=""
-          />
+          <img className="w-[396px] p-5" src={img} alt="" />
         </Zoom>
         <Fade up>
           <div className="lg:ml-10">

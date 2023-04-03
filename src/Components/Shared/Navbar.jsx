@@ -89,7 +89,8 @@ function Navbar(props) {
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             <div className="flex items-center">
-              <img className="h-14" src={logo} alt="" />
+              <img className="h-14" src={logo} alt="" />{" "}
+              <h3 className="font-bold text-xl ml-3">SALEH AHMED</h3>
             </div>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
